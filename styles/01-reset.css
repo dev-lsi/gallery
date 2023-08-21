@@ -1,0 +1,19 @@
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,a,p,table,form,input,button {
+    margin:0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.main-section{
+  padding: 6em 2em;
+}
