@@ -22,7 +22,7 @@
 
             <div class="nav-bar-container">
                 <div class="logo-container">
-                    <img src="./images/logo.png" alt="logo">
+                    <img src="./images/logo5.png" alt="logo">
                 </div>
                 <div class="nav-container">
                     <ul>
@@ -70,28 +70,8 @@
         </footer>
     </div>
 
-    <script>
-        const heroCenterLastParagraph = document.querySelector(".hero-center").lastElementChild;
-        console.log(heroCenterLastParagraph);
-        heroCenterLastParagraph.addEventListener('mouseover', heroLastOnClick);
-
-        function heroLastOnClick(e){
-            const el = e.target;
-            let col = el.style.color;
-            col === 'red'? el.style.color = 'blue': el.style.color='red';
-        }
-
-        const liArr = Array.from((document.querySelector("header ul")).children);
-        for(let li of liArr) {
-            
-            li.addEventListener('click',onClickRotate);
-            
-        };
-        function onClickRotate(e){
-            const el = e.target;
-            console.log(el);
-            (e.target).style.transform = "rotate(12deg)";
-        }
+    <script src="./scripts/test.js">
+       
     </script>
 
 </body>
