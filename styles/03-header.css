@@ -1,13 +1,11 @@
 
-
 header {
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 100%;
-    
+    display: block;
+
 }
 
-.nav-bar-container {
+nav ul{
+    list-style: none;
     padding: 2em;
     display: flex;
     flex-direction: row;
@@ -18,90 +16,8 @@ header {
     border-bottom:0.1em solid rgb(203, 202, 202); ;
 }
 
-.logo-container {
-  width:6em;
-  
+nav ul img{
+    max-width: 6em;
 }
-
-.logo-container img {
-
-    width:100%;
-
-}
-
-.nav-container ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    
-    column-gap: 4em;
-    
-}
-
-.nav-container ul li{
-    padding-left: 1em;
-    
-}
-
-.nav-container ul li a{
-    
-}
-
-
-
-.log-container ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    column-gap: 1em;
-}
-
-
-
-.nav-bar-container a{
-    
-    font-size:1.4em;
-}
-
-
-
-.log-container ul li{
-    
-    font-size: 0.8em;
-    padding-left: 1em;
-}
-
-.hero-container{
-    padding-top: 2em;
-   display:flex;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   
-}
-
-.hero-left{
-    flex: 1;
-}
-
-.hero-left img{
-    width:100%;
-    opacity: 0.8;
-}
-
-.hero-center{
-    text-align: center;
-    flex:2;
-}
-
-.hero-right{
-    flex:1;
-}
-.hero-right img{
-    width: 80%;
-    opacity: 0.8;
-}
-
 
 
