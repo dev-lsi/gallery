@@ -1,7 +1,8 @@
-main{
+main{ 
+    height:90vh;
     transition-duration: 0ms;
     text-align: center;
-    padding-top: 2rem;
+    padding-top:  50px;
     background: linear-gradient(60deg,rgb(175, 164, 164) 50%,white 70%,grey 100%);
 }
 
