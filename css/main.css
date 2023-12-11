@@ -1,0 +1,36 @@
+main{
+    transition-duration: 0ms;
+    text-align: center;
+    padding-top: 2rem;
+    background: linear-gradient(60deg,rgb(175, 164, 164) 50%,white 70%,grey 100%);
+}
+
+article {
+    text-align: center;
+    width: 100vw;
+    padding-left:2em;
+    padding-right: 2em;
+    
+    
+   
+}
+
+article img {
+    max-width: 60%;
+    max-height: 50vh;
+}
+
+article span img{
+    width:200px;
+    float:right;
+    border-bottom-right-radius: 60%;
+    margin: 0.4em;
+}
+
+article p {
+    display: inline;
+    align-content: center;
+    font-size: 24px;
+}
+
+

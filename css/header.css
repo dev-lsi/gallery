@@ -1,0 +1,132 @@
+body {
+    min-width: 336px;
+    ;
+}
+
+* {
+    transition: all .25s linear;
+}
+
+
+.welcome-p {
+    position: absolute;
+    top: 30vh;
+    left: 4vw;
+    color: aliceblue;
+    font-style: italic;
+    font-size: 1.4rem;
+    max-width: 200px;
+}
+
+
+
+header {
+    position: sticky;
+    top: -70vh;
+    z-index: 0;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header-background-image {
+    width: 100%;
+    height: 80vh;
+}
+
+.main-nav {
+    width: 100%;
+    display: flex;
+    column-gap: 4vw;
+    position: absolute;
+    height: 3em;
+    bottom: 10px;
+    justify-content: center;
+
+}
+
+
+.action-nav {
+    display: flex;
+    z-index: 10;
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+    column-gap: 1em;
+    font-size: 0.8rem;
+}
+
+.action-nav>li>a {
+    color: rgb(132, 132, 240);
+}
+
+.logo {
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+
+    border: 1px solid rgb(218, 218, 239);
+}
+
+nav ul li a {
+    color: antiquewhite;
+    padding: 2px 0.2em;
+    font-style: italic;
+    font-size: 2em;
+    text-wrap: nowrap;
+    border-right: 1px solid rgb(54, 88, 3);
+    border-bottom: 2px solid rgb(54, 88, 3);
+    border-radius: 30%;
+}
+
+
+
+
+
+@media (max-width:740px) {
+    
+
+    .action-nav {
+
+        transition: all .25s linear;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.4rem;
+        bottom: 20px;
+        right: 10px;
+        gap: 6px;
+    }
+
+    .logo {
+        transition: all .45s linear;
+        bottom: 10px;
+        left: 10px;
+        border: none;
+    }
+
+    .main-nav {
+        /* flex-direction: column; */
+        transition: all .25s linear;
+        font-size:0.5em;
+        position: absolute;
+        left: 0px;
+        bottom: 10px;
+        gap: 0 0.2em;
+    }
+
+    
+
+    header {
+        transition: all .25s linear;
+        position: sticky;
+        top: -70vh;
+        z-index: 0;
+        height: 80vh;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+

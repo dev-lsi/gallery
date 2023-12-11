@@ -1,46 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-        <!-- <link rel="stylesheet" href="./styles/00-site.css">
-        <link rel="stylesheet" href="./styles/01-reset.css">
-        <link rel="stylesheet" href="./styles/02-typography.css">
-        <link rel="stylesheet" href="./styles/03-header.css">
-        <link rel="stylesheet" href="./styles/04-main.css">
-        <link rel="stylesheet" href="./styles/05-footer.css">
-        <link rel="stylesheet" href="./styles/06-media.css">
-        <link rel="stylesheet" href="./styles/07-color-scheme.css"> -->
-        <script src="./scripts/app.js" type="module"></script>
-    </head>
-    
-    <body>
-    
-        <div class="site">
-            <!-- header -->
-            <header>
-                <nav>
-                    <ul>
-                        <li><img src="./images/logo.png" alt="LOGO"></li>
-                        <li><a href="/"></a>Home</li>
-                        <li><a href="/projects">Projects</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/register">Register</a></li>
-                        <li><a href="/login">Login</a></li>
-                        <li><a href="/logout">Logout</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <!-- main -->
-            <main>
-    
-            </main>
-            <!-- footer -->
-            <footer>
-                <p>&copy; 2023</p>
-            </footer>
-        </div>
-    
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Gallery</title>
+</head>
+
+<body>
+    <header>
+
+        <img class="header-background-image" src="./assets/tree.jpg" alt="header background">
+
+        <p class="welcome-p">
+            Hello, my name is Zornitza and here you can see a lot of my Art!
+        </p>
+
+        <nav>
+            <img class="logo" src="./assets/logo01.svg" alt="logo">
+            <ul class="main-nav">
+                <li><a href="">home</a></li>
+                <li><a href="">galeries</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">contacts</a></li>
+            </ul>
+            <ul class="action-nav">
+                <li><a href="" style="display:none">register</a></li>
+                <li><a href="">login</a></li>
+                <li><a href="" style="display:none">logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+           
+            <h2>First paragraph</h2>
+            <img src="./gal/picture01.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam natus non eos eligendi iste, excepturi
+                quis aspernatur, error saepe neque aliquam. Laudantium, voluptatum! Tempore perferendis qui architecto
+                alias itaque natus?
+                Lorem ipsum dolor sit amet <span><img src="./gal/picture01.jpg" alt=""></span> consectetur, adipisicing elit. Totam natus non eos eligendi iste, excepturi
+                quis aspernatur, error saepe neque aliquam. Laudantium, voluptatum! Tempore perferendis qui architecto
+                alias itaque natus?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam natus non eos eligendi iste, excepturi
+                quis aspernatur, error saepe neque aliquam. Laudantium, voluptatum! Tempore perferendis qui architecto
+                alias itaque natus?
+            </p>
+        </article>
+        <article>
+            <h2>Second paragraph</h2>
+            <img src="./gal/02.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam natus non eos eligendi iste, excepturi
+                quis aspernatur, error saepe neque aliquam. Laudantium, voluptatum! Tempore perferendis qui architecto
+                alias itaque natus?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam natus non eos eligendi iste, excepturi
+                quis aspernatur, error saepe neque aliquam. Laudantium, voluptatum! Tempore perferendis qui architecto
+                alias itaque natus?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam natus non eos eligendi iste, excepturi
+                quis aspernatur, error saepe neque aliquam. Laudantium, voluptatum! Tempore perferendis qui architecto
+                alias itaque natus?
+            </p>
+        </article>
+        <article>
+            <h2>third paragraph</h2>
+            <img src="./gal/picture03.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam natus non eos eligendi iste, excepturi
+                quis aspernatur, error saepe neque aliquam. Laudantium, voluptatum! Tempore perferendis qui architecto
+                alias itaque natus?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam natus non eos eligendi iste, excepturi
+                quis aspernatur, error saepe neque aliquam. Laudantium, voluptatum! Tempore perferendis qui architecto
+                alias itaque natus?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam natus non eos eligendi iste, excepturi
+                quis aspernatur, error saepe neque aliquam. Laudantium, voluptatum! Tempore perferendis qui architecto
+                alias itaque natus?
+            </p>
+        </article>
+    </main>
+    <footer>
+        <section class="contact-links">
+            <h4>folow me at:</h4>
+            <ul>
+                <li><a href=""><img class="icon" src="./icons/icons8-facebook-138.png" alt="">
+                        <p>Facebook</p>
+                    </a></li>
+                <li><a href=""><img class="icon" src="./icons/icons8-instagram-138.png" alt="">
+                        <p>Instagram</p>
+                    </a></li>
+                <li><a href=""><img class="icon" src="./icons/icons8-twitter-138.png" alt="">
+                        <p>Twitter</p>
+                    </a></li>
+            </ul>
+        </section>
+        <section>
+            <h4>sourses</h4>
+            <ul>
+                <li><a href="">site1</a></li>
+                <li><a href="">site2</a></li>
+                <li><a href="">site3</a></li>
+                <li><a href="">site4</a></li>
+                <li><a href="">site5</a></li>
+            </ul>
+        </section>
+        <section>
+            <h4>site links</h4>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Galleries</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </section>
+    </footer>
+    <p class="license">Zori Ivanova &#169; 2023</p>
+
+</body>
+
 </html>
