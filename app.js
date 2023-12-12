@@ -14,7 +14,9 @@ import {showRegister} from "./templates/register.js"
 
 
 function start() {
-
+  window.history.replaceState(null, "", "/");
+  
+  
   page('/index.html', '/');
   page('/',() => renderPage(showHome));
   page('/galleries',() => renderPage(showGalleries));
@@ -22,7 +24,7 @@ function start() {
   page('/contacts',() => renderPage(showContacts));
   page('/login',() => renderPage(showLogin));
   page('/register',() => renderPage(showRegister));
-  page('*', '/');
+  
   page();
 };
 
