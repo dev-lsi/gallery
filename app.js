@@ -10,9 +10,8 @@ function start() {
     page('/galleries',()=>showGalleries());
     page('/about',()=>showAbout());
     page('/contacts',()=>showContact());
-    page('/contacts/',()=>showContact());
-    page('*',()=>showHome());
-    page.start();
+    page('*','/');
+    page();
 }
 
 function showHome(){
