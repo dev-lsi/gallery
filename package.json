@@ -4,14 +4,14 @@
   "description": "gallery website",
   "main": "index.js",
   "scripts": {
-    
+
     "start": "app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lit-html": "^3.1.0",
+    
     "page": "^1.11.6"
   }
 }
