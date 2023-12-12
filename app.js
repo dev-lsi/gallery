@@ -15,9 +15,7 @@ import {showRegister} from "./templates/register.js"
 
 function start() {
 
-  if(window.location.href!="/"){
-    window.location.href="/";
-  }
+ 
   
   
   page('/index.html', '/');
