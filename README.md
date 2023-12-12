@@ -1,2 +1,2 @@
-# portfolio
-my portfolio website
+# gallery
+gallery website
