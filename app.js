@@ -14,7 +14,8 @@ import {showRegister} from "./templates/register.js"
 
 
 function start() {
-  window.history.pushState(null, "", "/");
+
+  window.history.pushState(null, "", "/index.html");
   
   
   page('/index.html', '/');
