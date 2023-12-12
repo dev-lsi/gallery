@@ -1,5 +1,5 @@
 main{ 
-    height:90vh;
+    min-height:90vh;
     transition-duration: 0ms;
     text-align: center;
     padding-top:  50px;
@@ -11,9 +11,6 @@ article {
     width: 100vw;
     padding-left:2em;
     padding-right: 2em;
-    
-    
-   
 }
 
 article img {
