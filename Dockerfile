@@ -14,7 +14,7 @@ RUN npm ci --only=production
 COPY . .
 
 # Expose the port that your SPA will run on (adjust as needed)
-EXPOSE 3000
+#EXPOSE 3000
 
 # Command to start the application
 CMD ["npm", "start"]
