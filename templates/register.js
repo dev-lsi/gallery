@@ -4,6 +4,7 @@ import{onSubmit} from "../util.js";
 
 
 const template = (onSubmit) => html`
+    <h1>Register Page</h1>
     <form @submit=${onSubmit} id="login-form" action="submit">
         <h5>please add email and password</h5>
         <div class="row"><label for="email">email:</label><input id="email" name="email" type="email" placeholder="email..."></div>

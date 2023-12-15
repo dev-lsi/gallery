@@ -3,7 +3,7 @@ footer{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
-    background-color:orange;
+    background-color:rgb(201, 132, 3);
     column-gap: 6em;
     padding-top: 1.6em;
     padding-bottom: 1.6em;
@@ -45,7 +45,7 @@ footer a{
         justify-content: flex-start;
         align-items: center;
         text-align: left;
-        background-color:orange;
+        background-color:rgb(206, 135, 3);
         column-gap: 6em;
         padding-top: 1.6em;
         padding-bottom: 1.6em;
