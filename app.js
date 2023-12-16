@@ -10,6 +10,7 @@ import { showLogin } from "./templates/login.js";
 import { showRegister } from "./templates/register.js"
 
 
+
 function start() {
 
   //page('/index.html', '/');
@@ -19,6 +20,7 @@ function start() {
   page('/contacts', () => renderPage(showContacts));
   page('/login', () => renderPage(showLogin));
   page('/register', () => renderPage(showRegister));
+  page('*',() => renderPage(showHome));
 
   page();
 };
