@@ -10,15 +10,9 @@ import { showLogin } from "./templates/login.js";
 import { showRegister } from "./templates/register.js"
 
 
-
-
-
 function start() {
 
-
-
-
-  page('/index.html', '/');
+  //page('/index.html', '/');
   page('/', () => renderPage(showHome));
   page('/galleries', () => renderPage(showGalleries));
   page('/about', () => renderPage(showAbout));
@@ -39,28 +33,7 @@ function renderPage(pg) {
 
   window.scrollTo(0, (bannerImage.offsetHeight))
 
-  // let lastScrollTop = window.scrollY || document.documentElement.scrollTop;
-  // document.addEventListener('scroll', handleScroll);
-
   
-
-  // function handleScroll() {
-
-  //   const scrollTopPosition = window.scrollY || document.documentElement.scrollTop;
-
-  //   if (scrollTopPosition > lastScrollTop) {
-      
-  //     header.style.display='none';
-      
-
-  //   } else if (scrollTopPosition < lastScrollTop) {
-      
-  //     header.style.display='flex';
-     
-  //   }
-  //   lastScrollTop = scrollTopPosition <= 0 ? 0 : scrollTopPosition;
-  // }
-
 };
 
 
