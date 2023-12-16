@@ -13,20 +13,23 @@ import { showRegister } from "./templates/register.js"
 
 function start() {
 
-  //page('/index.html', '/');
+  location.replace(location.href);
+
+  page('/index.html',() => renderPage(showHome));
   page('/', () => renderPage(showHome));
   page('/galleries', () => renderPage(showGalleries));
   page('/about', () => renderPage(showAbout));
   page('/contacts', () => renderPage(showContacts));
   page('/login', () => renderPage(showLogin));
   page('/register', () => renderPage(showRegister));
-  page('*',() => renderPage(showHome));
+  
 
   page();
 };
 
-function renderPage(pg) {
 
+function renderPage(pg) {
+  
   const main = document.querySelector('main');
   render(pg(), main);
 
