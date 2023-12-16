@@ -9,41 +9,44 @@ import { showContacts } from "./templates/contacts.js";
 import { showLogin } from "./templates/login.js";
 import { showRegister } from "./templates/register.js"
 
+  
 
 
 function start() {
 
-  location.replace(location.href);
-
-  page('/index.html',() => renderPage(showHome));
-  page('/', () => renderPage(showHome));
-  page('/galleries', () => renderPage(showGalleries));
-  page('/about', () => renderPage(showAbout));
-  page('/contacts', () => renderPage(showContacts));
-  page('/login', () => renderPage(showLogin));
-  page('/register', () => renderPage(showRegister));
+  renderPage(showHome);
   
 
-  page();
-};
+  page('/index.html/', () => renderPage(showHome));
+  page('/', () => renderPage(showHome));
+  page('/galleries/', () => renderPage(showGalleries));
+  page('/about/', () => renderPage(showAbout));
+  page('/contacts/', () => renderPage(showContacts));
+  page('/login/', () => renderPage(showLogin));
+  page('/register/', () => renderPage(showRegister));
 
+  page();
+  console.log(page(console.log('Hello!')))
+
+};
 
 function renderPage(pg) {
   
   const main = document.querySelector('main');
   render(pg(), main);
 
-  const header = document.querySelector('header');
-  const bannerImage = document.querySelector('.banner-image');
+  if(pg != showHome){
+    
+    const bannerImage = document.querySelector('.banner-image');
+    window.scrollTo(0, (bannerImage.offsetHeight));
 
-  window.scrollTo(0, (bannerImage.offsetHeight))
+  }else{
 
+    window.scrollTo(0, 0);
+
+  }
   
 };
-
-
-
-
 
 start();
 
