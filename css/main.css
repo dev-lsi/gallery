@@ -1,5 +1,7 @@
 main{ 
-    min-height:300vh;
+    
     text-align: center;
     background: linear-gradient(60deg,rgb(175, 164, 164) 50%,white 70%,grey 100%);
 };
+
+

@@ -84,4 +84,16 @@
       font-size: 4vw;
     }
 
+    .banner-text {
+      top: 4vw;
+      left: 6vw;
+      font-style: italic;
+      color: antiquewhite;
+    }
+
+    .banner-text p, .banner-text-heading {
+      font-size: 5vw;
+      padding: 0.3vw;
+    }
+
   }

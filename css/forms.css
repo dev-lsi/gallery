@@ -1,10 +1,32 @@
+.form-text-section{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
 
+}
+
+.form-text-section h4{
+    padding-bottom: 1vw;
+    color:rgb(22, 44, 3);
+}
+
+.login-register-ul{
+    max-width: fit-content;
+    padding-bottom: 3vw;
+    margin:0 auto;
+    list-style: circle;
+    color:rgb(22, 44, 3);
+    font-size: larger;
+    text-align: justify;
+}
 
 form{
    margin-top:600px;
    margin:auto auto;
    padding: 10px;
-   width:320px;
+   width:360px;
    display:flex;
    flex-direction: column;
    row-gap: 5px;
@@ -35,7 +57,7 @@ form{
 
 .submit-btn:hover{
     background-color:antiquewhite;
-    color: dimgray;
+    color: rgb(241, 9, 9);
 }
 
 .submit-btn:active{
