@@ -1,102 +1,87 @@
   /* BANNER */
-
+  
   .banner-image {
-      width: 100%;
-      aspect-ratio: 3/1;
-      
+    width:100%;
+    aspect-ratio: 3/1;
   }
 
   .banner-text {
-      position: absolute;
-      top: 6vw;
-      left: 12vw;
-
-      font-style: italic;
-      color: antiquewhite;
+    position: absolute;
+    top: 6vw;
+    left: 12vw;
+    font-style: italic;
+    color: antiquewhite;
   }
 
-  .banner-text p,
-  .banner-text-heading {
-
-      font-size: 3vw;
+  .banner-text p, .banner-text-heading {
+    font-size: 3vw;
   }
 
   /* HEADER */
 
-  header,
-  .main-nav ul,
-  .action-nav ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
+  header{
+    position: sticky;
+    top:0;
+    left:0;
+    border-bottom: 2px solid orangered;
+   
   }
 
-  header {
-      padding: 1vw;
-      margin: 0;
-      position: sticky;
-      top: 0px;
-      flex: 12;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      align-items: center;
-      background-color: black;
-      height: 6vw;
-      /* transition: linear 0.1s; */
+  header nav ul{
+    background-color: black;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .logo {
-      height: 6vw;
-      margin-left: 2vw;
-      border-radius: 50%;
-      border: 1px solid white;
+    padding-left: 2vw;
+    height: 6vw;
   }
 
-  .main-nav {}
-
-  .action-nav {
-      margin-right: 2vw;
+  nav ul li a {
+    font-size: 3vw;
+    color: antiquewhite;
+    font-style: italic;
+    border-bottom: 1px solid rgb(105, 164, 17);
+    border-top: none;
+    border-bottom-right-radius: 40%;
   }
 
-  .main-nav ul {
-
-      column-gap: 4vw;
-
+  nav ul li a:hover {
+    color: rgb(163, 248, 163);
   }
 
-  .action-nav ul {
-      font-size: 1.4vw;
-      color: cyan;
+  nav ul li a:active {
+    color: rgb(198, 248, 198);
   }
 
-  .action-nav ul li a {
-      font-size: 1.8vw;
-      color: cyan;
+  .register a, .login a, .logout a {
+    color:blue;
+    font-size: 2.4vw;
   }
 
-  header ul li a {
-      padding: 0.2vw;
-      font-size: 3vw;
-      color: antiquewhite;
-      font-style: italic;
-      /* border-right:1px solid greenyellow; */
-      border-bottom: 1px solid rgb(105, 164, 17);
-      border-top: none;
-      border-bottom-right-radius: 40%;
-
+  .register a:hover, .login a:hover, .logout a:hover {
+    color:rgb(156, 156, 252);
+    
   }
 
-  header ul li a:hover {
+  @media (max-width:500px) {
 
-      color: rgb(118, 243, 118);
+    header nav ul li a{
+      font-size: 5vw;
+    }
 
+    .logo{
+      display: none;
+    }
 
-  }
-
-  header ul li a:active {
-
-      color: rgb(58, 126, 58);
-
+    .register a, .login a, .logout a {
+      color:blue;
+      font-size: 4vw;
+    }
 
   }

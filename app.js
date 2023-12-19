@@ -36,7 +36,7 @@ function renderPage(pg) {
   render(pg(), main);
 
   if(pg != showHome){
-    
+
     const bannerImage = document.querySelector('.banner-image');
     window.scrollTo(0, (bannerImage.offsetHeight));
 
@@ -44,6 +44,13 @@ function renderPage(pg) {
 
     window.scrollTo(0, 0);
 
+  }
+  const mobileMenu=document.querySelector('header ul li img');
+  mobileMenu.addEventListener('click',show)
+
+  function show(e){
+    console.log(e.target)
+    
   }
   
 };

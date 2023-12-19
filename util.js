@@ -20,7 +20,9 @@ export async function onSubmit(event) {
         const response = await makeRequest(data);
         console.log(Object.keys(response));
     }else{
-        alert('passwords must be equal!')
+
+        alert('passwords must be equal!');
+
     }
 
     
