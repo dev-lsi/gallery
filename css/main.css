@@ -1,7 +1,20 @@
 main{ 
-    
+    padding-top: 6vw;
     text-align: center;
     background: linear-gradient(60deg,rgb(175, 164, 164) 50%,white 70%,grey 100%);
 };
 
+main .galeries-article{
+    width:70vw;
+    padding-bottom: 3vw;
+    float:right;
+}
+
+main .galeries-article img {
+    height:30vh;
+}
+
+main .galeries-article p {
+    width:60vw;
+}
 

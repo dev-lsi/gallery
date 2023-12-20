@@ -41,3 +41,11 @@ async function makeRequest(data){
         alert('ALERT!');
     }
 }
+
+export async function loadHeroes(){
+
+    const response = await fetch('https://swapi.dev/api/people/1');
+    return await response.json();
+
+    
+}

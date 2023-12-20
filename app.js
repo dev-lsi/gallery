@@ -30,10 +30,10 @@ function start() {
 
 };
 
-function renderPage(pg) {
+async function renderPage( pg) {
   
   const main = document.querySelector('main');
-  render(pg(), main);
+  render(await pg(), main);
 
   if(pg != showHome){
 
