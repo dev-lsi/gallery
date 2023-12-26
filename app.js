@@ -1,59 +1,29 @@
 
-import { html, render } from "./lib/lit-html/lit-html.js";
 import page from "./lib/page/page.mjs";
+import { decorateCTX } from "./middleware/decorateCTX.js";
 
-import { showHome } from "./templates/home.js";
-import { showGalleries } from "./templates/galleries.js";
-import { showAbout } from "./templates/about.js";
-import { showContacts } from "./templates/contacts.js";
-import { showLogin } from "./templates/login.js";
-import { showRegister } from "./templates/register.js"
+import { home } from "./templates/home.js";
+import { galleries } from "./templates/galleries.js";
+import { about } from "./templates/about.js";
+import { contacts } from "./templates/contacts.js";
+import { register } from "./templates/register.js"
+import { login } from "./templates/login.js";
+import { logout } from "./templates/logout.js";
 
-  
+document.addEventListener('DOMContentLoaded', start);
 
 
 function start() {
+  page('*', decorateCTX);
+  page('/', 'index.html');
+  page('/index.html', home);
+  page('/galleries', galleries);
+  page('/about', about);
+  page('/contacts', contacts);
+  page('/register',register);
+  page('/login', login);
+  page('/logout',logout)
 
-  renderPage(showHome);
-  
-
-  page('/index.html/', () => renderPage(showHome));
-  page('/', () => renderPage(showHome));
-  page('/galleries/', () => renderPage(showGalleries));
-  page('/about/', () => renderPage(showAbout));
-  page('/contacts/', () => renderPage(showContacts));
-  page('/login/', () => renderPage(showLogin));
-  page('/register/', () => renderPage(showRegister));
-
+  //page('logout',logout);
   page();
-  console.log(page(console.log('Hello!')))
-
 };
-
-async function renderPage( pg) {
-  
-  const main = document.querySelector('main');
-  render(await pg(), main);
-
-  if(pg != showHome){
-
-    const bannerImage = document.querySelector('.banner-image');
-    window.scrollTo(0, (bannerImage.offsetHeight));
-
-  }else{
-
-    window.scrollTo(0, 0);
-
-  }
-  const mobileMenu=document.querySelector('header ul li img');
-  mobileMenu.addEventListener('click',show)
-
-  function show(e){
-    console.log(e.target)
-    
-  }
-  
-};
-
-start();
-
