@@ -1,20 +1,21 @@
 main{ 
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    gap:3em;
+    align-items: center;
     padding-top: 6vw;
-    text-align: center;
+    padding-bottom: 6vw;
+   
     background: linear-gradient(60deg,rgb(175, 164, 164) 50%,white 70%,grey 100%);
+
 };
 
-main .galeries-article{
-    width:70vw;
-    padding-bottom: 3vw;
-    float:right;
-}
 
-main .galeries-article img {
-    height:30vh;
-}
 
-main .galeries-article p {
-    width:60vw;
-}
+
+
+
 

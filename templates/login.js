@@ -2,6 +2,7 @@ import { loginUser } from "../api/loginUser.js";
 import { html } from "../lib/lit-html/lit-html.js";
 
 
+
 export function login(ctx) {
 
     const template = () => html`
@@ -15,7 +16,7 @@ export function login(ctx) {
          </ul>
      </section>
      <section class=form-text-section>
-         <form @submit=${submitHandler} id="login-form" action="submit">
+         <form @submit=${(e) => loginUser(e,ctx)} id="login-form" action="submit">
         
              <h6>please add email and password</h6>
     
@@ -33,24 +34,6 @@ export function login(ctx) {
      </section>`;
 
     ctx.renderTemplate(template(), ctx.container);
-
-
-    function submitHandler(e) {
-
-        e.preventDefault();
-        
-        const form = e.target;
-        const formData = new FormData(form);
-
-        const username = formData.get('email');
-        const password = formData.get('password');
-
-        const userData = { username, password };
-        loginUser(ctx, userData);
-    }
-
-
-
 
 };
 

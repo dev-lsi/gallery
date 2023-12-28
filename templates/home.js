@@ -1,19 +1,20 @@
 import { html } from "../lib/lit-html/lit-html.js";
-import page from "../lib/page/page.mjs";
+import { showNotification } from "../util/notifications.js";
 
 export function home(ctx) {
+    
+    
+    if( ctx.hasOwnProperty('user')){
 
-    let currentUserName='guest';
+        const templateLogged = (ctx) => html`<h1>Home Page</h1><p>Welcome ${ctx.user.username} !</p>`;
+        ctx.renderTemplate(templateLogged(ctx),ctx.container);
 
-    if(ctx.user){
+    }else{
 
-        currentUserName = ctx.user.username;
+        
+        const templateUnlogged = (x) => html`<h1>Home Page</h1><p>Welcome Guest!</p>`;
+        ctx.renderTemplate(templateUnlogged(ctx),ctx.container);
     }
-
-    const template=(ctx) => html`<h1>Home Page</h1><p>Welcome ${currentUserName}!</p>`;
-
-
-    ctx.renderTemplate(template(ctx),ctx.container);
     
 };
 
