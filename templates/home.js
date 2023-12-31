@@ -29,11 +29,29 @@ export async function home(ctx) {
 
             <a href="/galleries">All Galleries</a>
 
-            <section class>
-                <div class="image-card"><img src = "../assets/sunflowers.jpg" alt="sunflowers.jpg"/></div>
-                <div class="image-card"><img src = "../assets/charcoal01.jpg" alt="charcoal01.jpg"/></div>
-                <div class="image-card"><img src = "../assets/drawings01.jpg" alt="drawingso1.jpg"/></div>
-            </section>
+            
+
+            <div class = "link-section">
+                <div><img src = "../assets/sunflowers.jpg" alt="sunflowers.jpg"/></div>
+                <div><img src = "../assets/waterfall.jpg" alt="waterfall.jpg"/></div>
+                <div><img src = "../assets/coastal.jpg" alt="coastal.jpg"/></div>
+                <a href="/galleries/oil">Oil and Water color</a>
+            </div>
+
+            <div class = "link-section">
+                <div><img src = "../assets/charcoal01.jpg" alt="sunflowers.jpg"/></div>
+                <div><img src = "../assets/charcoal02.jpg" alt="charcoal01.jpg"/></div>
+                <div><img src = "../assets/charcoal03.jpg" alt="drawingso1.jpg"/></div>
+                <a href="/galleries/charcoal">Charcoal</a>
+            </div>
+
+            <div class = "link-section">
+                <div><img src = "../assets/yellow.jpg" alt="sunflowers.jpg"/></div>
+                <div><img src = "../assets/images.jpg" alt="charcoal01.jpg"/></div>
+                <div><img src = "../assets/drawings01.jpg" alt="drawingso1.jpg"/></div>
+                <a href="/galleries/scratches">Scratches</a>
+                
+            </div>
 
             <a href="/galleries/oil">Oil & Water-color Paintings</a>
             <a href="/galleries">Charcoal</a>
