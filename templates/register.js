@@ -1,6 +1,7 @@
 import { html } from "../lib/lit-html/lit-html.js";
 //import { getFormData } from "../util/getFormData.js";
 import {registerUser} from "../api/registerUser.js";
+import { autoScroll } from "../middleware/autoScroll.js";
 
 export async function register(ctx) {
 
@@ -36,9 +37,7 @@ export async function register(ctx) {
     `;
 
     ctx.renderTemplate(template(), ctx.container);
-
-    
-
+    //autoScroll();
     
 }
 

@@ -1,7 +1,5 @@
 import { getFormData } from "../util/getFormData.js";
-import { home } from "../templates/home.js";
 import page from "../lib/page/page.mjs";
-import { decorateCTX } from "../middleware/decorateCTX.js";
 import { showNotification } from "../util/notifications.js";
 
 export async function loginUser(e, ctx) {

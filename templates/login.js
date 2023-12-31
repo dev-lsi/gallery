@@ -1,6 +1,6 @@
 import { loginUser } from "../api/loginUser.js";
 import { html } from "../lib/lit-html/lit-html.js";
-
+import { autoScroll } from "../middleware/autoScroll.js";
 
 
 export function login(ctx) {
@@ -34,7 +34,7 @@ export function login(ctx) {
      </section>`;
 
     ctx.renderTemplate(template(), ctx.container);
-
+    //autoScroll();
 };
 
 

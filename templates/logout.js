@@ -19,4 +19,5 @@ export function logout(ctx){
   
   
   page.show('/index.html');
+  
 }
