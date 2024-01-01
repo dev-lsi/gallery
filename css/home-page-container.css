@@ -11,14 +11,16 @@
 }
 
 .home-page-container h1{
-     padding-left: 3em;
+     
      font-style: italic;
      color:orangered;
      align-self: flex-start;
+     padding-left: 16px;
+     padding-right: 16px;
  }
 
  .home-page-container h3{
-     padding-left: 2em;
+     padding-left: 2%;
      font-style: italic;
      color:rgb(112, 32, 3);
      align-self: flex-start;
@@ -27,12 +29,14 @@
  
 
 .home-page-container div p{
-     padding-left: 3em;  
+     text-align: left;
+    padding-left: 16px;
+    padding-right: 16px;
      font-size: 1.6em;
      color:rgb(66, 2, 84);
      font-family:Arial, Helvetica, sans-serif;
      line-height: 2em;
-     text-indent: 10px;
+    
      
  }
 
@@ -40,6 +44,7 @@
 
 .home-page-container a{
     flex:100%;
+    font-size: 6em;
     color:rgb(165, 46, 3);
     font-size: 2em;
     text-decoration: underline;
@@ -47,7 +52,6 @@
 
 .home-page-container a:hover{
      color:orangered;
-     font-size: 2em;
      text-decoration: underline;
  }
 
@@ -55,6 +59,7 @@
     position: relative;
     width:80vw;
     height:50vw;
+    
 }
 
 .image-div{
@@ -118,7 +123,7 @@
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: center;
     gap:2em;
     padding-bottom: 5em;
 
@@ -130,12 +135,16 @@
   padding: 20px;
   border: 6px solid rgb(40, 23, 3);
   border-radius: 4px;
-   
+  height: fit-content; 
 }
 
 .link-section div img{
     width:100%;
 }
+
+.link-section div a{
+     font-size: 24px;
+ }
 
 @media (max-width:700px) {
      .link-section {
@@ -156,7 +165,40 @@
           border: 6px solid rgb(40, 23, 3);
           border-radius: 4px;
      }
+
+     .home-page-container h1{
+     
+          font-style: italic;
+          color:orangered;
+          align-self: flex-start;
+          padding-left: 16px;
+          padding-right: 16px;
+      }
+     
+      .home-page-container h1{
+
+          font-size: 1.6em;
+          font-style: italic;
+         
+      }
+     
+      
+     
+     .home-page-container div p{
+         
+          font-size: 1.2em; 
+         
+         
         
+     }
+
+     .grey{
+          position: relative;
+          width:94vw;
+          height:40vw;
+          
+      }
+
 }
 
 
