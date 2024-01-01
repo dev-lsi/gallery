@@ -1,27 +1,38 @@
 footer{
     display:flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-start;
-    background-color:orange;
-    column-gap: 6em;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: start;
+   
+    background: linear-gradient(
+        60deg,
+        rgb(10, 10, 10) 50%,
+        rgb(61, 58, 58) 70%,
+        rgb(20, 19, 19) 100%
+        );
+    gap: 6em;
     padding-top: 1.6em;
     padding-bottom: 1.6em;
     z-index: 888;
+    color:antiquewhite;
 }
 
 footer h4{
-    padding-bottom: 0.4em;
+    padding-bottom: 0.6em;
 }
 
 footer section{
     display:flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 1em;
+    
 }
 
 .icon{
     width:1.6em;
+    padding: 0.4em;
 }
 
 .contact-links ul li a {
@@ -30,11 +41,11 @@ footer section{
     flex-wrap: nowrap;
     align-items: center;
     gap:1em;;
-    color:rgb(12, 1, 40)
+    color:antiquewhite;
 }
 
 footer a{
-    color:rgb(12, 1, 40);
+    color:rgb(199, 228, 252);
     font-size: 1.4em;
 }
 
@@ -46,5 +57,14 @@ footer a{
     padding-left:2em;
     background: linear-gradient(90deg,rgb(27, 26, 26) 50%,white 70%,grey 100%);
     color:antiquewhite
+}
+
+@media (max-width:700px) {
+    footer{
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        gap: 6em;
+    }
 }
 

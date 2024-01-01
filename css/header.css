@@ -71,17 +71,20 @@
 
   }
 
-  #gall-link{
-    position: fixed;
-    top:100px;
-    left:100px;
+  #gall-link a{
+    position: fixed; 
+    top:20px;
+    right:2px;
     font-size: 24px;
     color:lightgreen;
+    background-color: brown;
   }
 
-  @media (max-width:500px) {
+  @media (max-width:700px) {
 
+    
     header nav ul li a {
+     
       font-size: 5vw;
     }
 
@@ -119,21 +122,5 @@
 
     }
 
-    footer {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: left;
-      background-color: rgb(206, 135, 3);
-      column-gap: 6em;
-      padding-top: 1.6em;
-      padding-bottom: 1.6em;
-    }
-
-    footer {
-      text-align: left;
-    }
-
+    
   }

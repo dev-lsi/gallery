@@ -34,9 +34,9 @@
     margin: auto;
 }
 
-main :nth-child(2n){
+/* main :nth-child(2n){
   flex-flow: row-reverse;
-}
+} */
 
 .image-card p{
     flex-basis:40%;
