@@ -1,4 +1,4 @@
-import { home } from "./home.js";
+
 import page from "../lib/page/page.mjs";
 import { showNotification } from "../util/notifications.js";
 

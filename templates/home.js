@@ -1,14 +1,19 @@
 import { html } from "../lib/lit-html/lit-html.js";
-import { showNotification } from "../util/notifications.js";
-import { autoScroll } from "../middleware/autoScroll.js";
-import { loadPictures } from "../api/loadPictures.js";
 
 export async function home(ctx) {
+    
+    let currentUserName='';
+
+    if(ctx.hasOwnProperty('user')){
+        currentUserName = ctx.user.username;   
+    }else{
+        currentUserName ='Guest user';
+    }
 
     const template = (ctx) => html`
-
+        
         <div class = home-page-container>
-            <h3>${ctx.user.username}</h3>
+            <h3>${currentUserName}</h3>
             <div>
             <h1>Welcome to Zori's Art Gallery!</h1>
             <p>Walk trought the galeries</p>
@@ -26,10 +31,10 @@ export async function home(ctx) {
                 <div class = "image-div"><img src = "../assets/charcoal04.jpg" alt="charcoal04.jpg"/></div>
                 <div class = "image-div"><img src = "../assets/charcoal05.jpg" alt="charcoal05.jpg"/></div>
                
-                <div class = "image-div"><img src = "../assets/paint-tools01.png" alt="tools.png"/></div>
+                <div class = "image-div"><img src = "../assets/paint-icon.png" alt="tools.png"/></div>
             </section>
 
-            <a href="/galleries">All Galleries</a>
+            <a href="/gallery">All Paintings</a>
 
             
 
@@ -58,10 +63,10 @@ export async function home(ctx) {
         </div>
 
     `;
-
+   console.log(ctx.container)
     ctx.renderTemplate(template(ctx), ctx.container);
 
-    //autoScroll();
+    
 };
 
 

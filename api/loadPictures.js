@@ -1,6 +1,5 @@
 export async function loadPictures(){
-
-        console.log('loadPictures called');
+        
 
         const response = await fetch(`https://parseapi.back4app.com/classes/Picture`,{
             method: 'get',

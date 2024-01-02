@@ -1,5 +1,4 @@
 import { html} from "../lib/lit-html/lit-html.js";
-import { autoScroll } from "../middleware/autoScroll.js";
 
 export function contacts(ctx) {
 
