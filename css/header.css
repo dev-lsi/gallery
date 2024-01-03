@@ -1,14 +1,14 @@
   /* BANNER */
 
   .banner-image {
-    filter: grayscale(40%);
+    
     width: 100%;
     aspect-ratio: 3/1;
   }
 
   .banner-text {
     position: absolute;
-    top: 6vw;
+    top: 16vw;
     left: 12vw;
     font-style: italic;
     color: antiquewhite;
@@ -31,6 +31,7 @@
   }
 
   header nav ul {
+    position: relative;
     background-color: black;
     display: flex;
     flex-direction: row;
@@ -123,5 +124,33 @@
 
     }
 
-    
+    .ultimate-menu{
+   position: absolute;
+   top: 20px;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+   width: 40vw;
+   bottom: 0px;
+   height: fit-content;
+   background-color: rgba(72, 64, 64, 0.8);
+    }
+
+    .ultimate-menu li{
+      width: 100%;
+      font-size: 28px;
+      color: antiquewhite;
+      border: 1px solid rgb(138, 132, 132);
+      text-align: center;
+      padding: 0.2em;
+    }
+
+    .ultimate-menu li:hover{
+      
+      font-size: 28px;
+      color: rgb(254, 254, 254);
+      border: 2px solid rgb(239, 235, 235);
+      text-align: center;
+      
+    }
   }

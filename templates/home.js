@@ -31,7 +31,7 @@ export async function home(ctx) {
                 <div class = "image-div"><img src = "../assets/charcoal04.jpg" alt="charcoal04.jpg"/></div>
                 <div class = "image-div"><img src = "../assets/charcoal05.jpg" alt="charcoal05.jpg"/></div>
                
-                <div class = "image-div"><img src = "../assets/paint-icon.png" alt="tools.png"/></div>
+                <div class = "image-div"><img src = "../assets/oil-icon.png" alt="tools.png"/></div>
             </section>
 
             <a href="/gallery">All Paintings</a>

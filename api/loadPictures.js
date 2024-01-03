@@ -1,7 +1,7 @@
-export async function loadPictures(){
+export async function loadPictures(options){
         
 
-        const response = await fetch(`https://parseapi.back4app.com/classes/Picture`,{
+        const response = await fetch(`https://parseapi.back4app.com/classes/Picture`+options,{
             method: 'get',
             headers: {
                 'X-Parse-Application-Id': 'YtKzBrKzmB3AKqenaoCxQ2u847ZCjfZAV1BnOazl',

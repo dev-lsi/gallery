@@ -3,7 +3,15 @@ import { html } from "../lib/lit-html/lit-html.js";
 
 export async function gallery(ctx) {
 
-    const data = await loadPictures();
+    
+    let option='';
+    const select = document.querySelector('#select');
+
+   if(select){
+    option = select.value;
+   }
+    
+    const data = await loadPictures(option);
 
     const pictures = data.results;
 
@@ -35,8 +43,8 @@ export async function gallery(ctx) {
     <div class="gallery-page-container">
         
         <label>Select by paint type:
-        <select @click=${(e)=>handleOption(e)}>
-            <option value="all">All</option>
+        <select id = "select" @click=${(e)=>handleOption(e)}>
+            <option value="">All</option>
             <option value="oil">Oil</option>
             <option value="watercolor">Watercolor</option>
             <option value="acrylic">Acrylic</option>
@@ -55,7 +63,17 @@ export async function gallery(ctx) {
     ctx.renderTemplate(template(imageCardTemplates), ctx.container);
     
     function handleOption(e){
-        
-        //console.log(e.target.value)
+
+        console.log(e.target.value)
+
+        if(e.target.value== "OPTION"){
+
+            const option = e.target.value;
+            console.log(option)
+            const queryString=`${"?paintType=" + option}`;
+            gallery(ctx)
+
+        }
+       
     }
 }
