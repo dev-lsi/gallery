@@ -1,7 +1,7 @@
 
 import page from "./lib/page/page.mjs";
 import { render} from "./lib/lit-html/lit-html.js";
-
+import { loadHeader } from "./util/loadHeader.js";
 
 
 import { home } from "./templates/home.js";
@@ -18,10 +18,12 @@ document.addEventListener('DOMContentLoaded', start);
 
 //page(decorateCTX);
 function start() {
-   
+  loadHeader();
+  const main = document.querySelector("main");
+  
+
   const ctx = {
-    container: document.querySelector('main'),
-    renderTemplate: render
+    renderTemplate:(template) => render(template,main)
   }
 
   function getClientSavedData() {

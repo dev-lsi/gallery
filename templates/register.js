@@ -6,21 +6,21 @@ export async function register(ctx) {
 
     const template = () => html`
 
-        <h2>Register Page</h2>
+        
 
-        <section class = form-text-section>
+        <section class="column form-text-section">
 
-            <h4>On login you will be able to:</h4>
+            <h4>On Register you will be able to:</h4>
             <ul class="login-register-ul">
-                <li>Comment my paintings</li>
-                <li>Read the others coments</li>
-                <li>Rate on the articles</li>
-                <li>Receive emails abut new stuff</li>
+                <li><p>Comment my paintings</p></li>
+                <li><p>Read the others coments</p></li>
+                <li><p>Rate on the articles</p></li>
+                <li><p>Receive emails abut new stuff</p></li>
             </ul>
 
         </section>
        
-        <form @submit = ${(e) => registerUser(e,ctx) } id="login-form" action="submit">
+        <form class="column" @submit = ${(e) => registerUser(e,ctx) } id="login-form" action="submit">
 
             <h5>please register:</h5>
 

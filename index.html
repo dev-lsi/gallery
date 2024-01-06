@@ -6,80 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/app.css">
     <script src="./app.js" type="module"></script>
-    <title>Zori Gallery</title>
+    <title>Zori's Gallery</title>
 </head>
 
 <body>
 
-    <img class="banner-image" src="./assets/banner.jpg" alt="">
-    <div class="banner-text">
-        <h2 class="banner-text-heading">Zori's Art Gallery</h2>
-    </div>
     <header>
         <nav class="main-nav">
-            <ul>
-                <li><img class="logo" src="./assets/logo01.svg" alt="logo">
-                    <ul class="ultimate-menu">
-                        <li>coco1</li>
-                        <li>coco2</li>
-                        <li>coco3</li>
-                        <li>coco4</li>
-                    </ul>
-                </li>
+            <ul class="nav-ul">
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="/gallery">Gallery</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="gallery">Gallery</a></li>
+                <li><a href="about">About</a></li>
                 <li><a href="/contacts">Contacts</a></li>
-                <li ><a id="login-logout" href="/login">Login</a></li>
             </ul>
-            
         </nav>
+        <div class="task-bar">
+            <div class="logo-container">
+                <img class="logo" src="./assets/logo01.svg" alt="logo">
+            </div>
+            <button class="menu-button">MENU</button>
+            <ul>
+                <li><a id="login-logout" href="/login">Login</a></li>
+            </ul>
+        </div>
     </header>
 
     <!-- Main.................................................................... -->
-    <main>
-        <label for="dropdown">Select an option:</label>
-        <select id="dropdown" name="dropdown">
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
-        </select>
+    <main class="column">
+
     </main>
+        
+    
+    
     
     <!-- Footer.................................................................... -->
     <footer>
-        <section class="contact-links">
-            <h4>folow me at:</h4>
-            <ul>
-                <li><a href=""><img class="icon" src="./icons/icons8-facebook-138.png" alt="">
-                        <p>Facebook</p>
-                    </a></li>
-                <li><a href=""><img class="icon" src="./icons/icons8-instagram-138.png" alt="">
-                        <p>Instagram</p>
-                    </a></li>
-                <li><a href=""><img class="icon" src="./icons/icons8-twitter-138.png" alt="">
-                        <p>Twitter</p>
-                    </a></li>
+        
+        <section>
+            <h4>Folow Me:</h4>
+            <ul class="social-links">
+                <li><a href=""><img class="social-icon" src="./icons/icons8-facebook-138.png" alt=""><p>Facebook</p></a></li>
+                <li><a href=""><img class="social-icon" src="./icons/icons8-instagram-138.png" alt=""><p>Instagram</p></a></li>
+                <li><a href=""><img class="social-icon" src="./icons/icons8-twitter-138.png" alt=""><p>Twitter</p></a></li>
             </ul>
+            <div class="after-div">
+                <p></p>
+            </div>
+        </section>
+        <section >
+            <h4>Best World Galleries</h4>
+            <ul class="world-galleries">
+                <li><a href="https://www.getyourguide.com/paris-l16/pompidou-center-skip-the-line-tickets-t65092/?partner_id=MDOIAQ1&cmp=museums" target="_blank">The Pompidou Centre - Paris</a></li>
+                <li><a href="https://www.getyourguide.com/s/?q=British%20Museum&p=1?partner_id=MDOIAQ1&cmp=bestmuseums" target="_blank">The British Museum - London</a></li>
+                <li><a href="https://www.getyourguide.com/amsterdam-l36/priority-entrance-rijksmuseum-amsterdam-t7135/?partner_id=MDOIAQ1&cmp=museums" target="_blank">The Rijksmuseum - Amsterdam</a></li>
+                <li><a href="https://www.getyourguide.com/paris-l16/louvre-museum-skip-the-line-entrance-ticket-t63741/?partner_id=MDOIAQ1&cmp=museums" target="_blank">The Louvre - Paris</a></li>
+                <li><a href="https://www.getyourguide.com/museo-del-prado-l2773/entrance-ticket-national-prado-museum-t32264/?partner_id=MDOIAQ1&cmp=museums" target="_blank">Museum del Prado - Madrid</a></li>
+            </ul>
+            <div class="after-div">
+                <p></p>
+            </div>
         </section>
         <section>
-            <h4>sourses</h4>
-            <ul>
-                <li><a href="">site1</a></li>
-                <li><a href="">site2</a></li>
-                <li><a href="">site3</a></li>
-                <li><a href="">site4</a></li>
-                <li><a href="">site5</a></li>
-            </ul>
-        </section>
-        <section>
-            <h4>site links</h4>
-            <ul>
+            <h4>Site Map Links</h4>
+            <ul class="site-map-links">
                 <li><a href="">Home</a></li>
                 <li><a href="">Contact</a></li>
                 <li><a href="">Gallery</a></li>
                 <li><a href="">About</a></li>
             </ul>
+            <div class="after-div">
+                <p></p>
+            </div>
         </section>
     </footer>
     <p class="license">Zori Ivanova &#169; 2023</p>
@@ -87,3 +84,4 @@
 </body>
 
 </html>
+

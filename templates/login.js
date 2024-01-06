@@ -15,7 +15,7 @@ export function login(ctx) {
          </ul>
      </section>
      <section class=form-text-section>
-         <form @submit=${(e) => loginUser(e,ctx)} id="login-form" action="submit">
+         <form class="column" @submit=${(e) => loginUser(e,ctx)} id="login-form" action="submit">
         
              <h6>please add email and password</h6>
     

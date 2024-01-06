@@ -1,8 +1,36 @@
-body{
+
+main{
+    background:linear-gradient(45deg, 
+    rgb(101, 98, 98) 20%,
+    white 30%,
+    rgb(74, 74, 126) 60%);
+    min-height: 200vh;
+
+    padding-block: 8em;
+}
+
+.row{
+    display: flex;
+    width:100vw;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+    column-gap: 2em;
+}
+
+.column{
     display: flex;
     flex-direction: column;
     flex-wrap:nowrap;
+    row-gap: 2em;
+    align-items: center;
+   
+    row-gap: 2em;
 }
+
+
+
+
 
 
 

@@ -1,70 +1,77 @@
 footer{
+    padding-block: 4em;
     display:flex;
     flex-direction: row;
-    justify-content:space-around;
-    align-items: start;
-   
-    background: linear-gradient(
-        60deg,
-        rgb(10, 10, 10) 50%,
-        rgb(61, 58, 58) 70%,
-        rgb(20, 19, 19) 100%
-        );
-    gap: 6em;
-    padding-top: 1.6em;
-    padding-bottom: 1.6em;
-    z-index: 888;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+    background-color: rgba(3, 23, 59, 0.9);
     color:antiquewhite;
-}
-
-footer h4{
-    padding-bottom: 0.6em;
-}
+    border-top: 1px solid antiquewhite;
+};
 
 footer section{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    row-gap: 1em;
-    
-}
-
-.icon{
-    width:1.6em;
-    padding: 0.4em;
-}
-
-.contact-links ul li a {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer section ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.6em;
+}
+
+.social-icon{
+    width:1.2em;
+    height: 1.2em;
+}
+
+footer a, footer a p{
+    color:antiquewhite;
+    font-size: 1.2em;
+}
+
+.social-links li a{
+    display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    gap:1em;;
+    column-gap: 0.8em;
+}
+
+.social-links li a p{
     color:antiquewhite;
+    font-size: 1em;
 }
 
-footer a{
-    color:rgb(199, 228, 252);
-    font-size: 1.4em;
+footer h4{
+    text-align: center;
+    padding-bottom: 0.8em;
 }
 
+.site-map-links{
+    align-items: center;
+}
 
+.after-div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 2px;
+    border-radius: 1px;
+    background-color: transparent;
+    margin-block: 2.6em;
+}
+
+.after-div p{
+    width:30px;
+    background-color: rgb(18, 42, 196);
+}
 
 .license{
-    font-size: larger;
-    padding: 0.2em;
-    padding-left:2em;
-    background: linear-gradient(90deg,rgb(27, 26, 26) 50%,white 70%,grey 100%);
-    color:antiquewhite
-}
-
-@media (max-width:700px) {
-    footer{
-        flex-direction: column;
-        justify-content:space-around;
-        align-items: center;
-        gap: 6em;
-    }
+    background-color: rgb(3, 23, 59);
+    color:antiquewhite;
+    font-size: 1em;
+    padding-left: 4vw;
 }
 
