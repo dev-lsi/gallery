@@ -1,23 +1,18 @@
 
 .image-card{
-    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.8em;
+
     height:fit-content;
+    width:80vw;
+
+    padding: 3em;
+
     border:1px solid rgba(188, 186, 186, 0.5);
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 4px;
-    min-width:60vw
-   
-}
-
-.category-icon{
-    position: absolute;
-    bottom:2em;
-    left:2em;
-    width:3.6em;
-}
-
-.image-name{
-    color:blanchedalmond;
+    border-radius: 0.2em;
 }
 
 .image-card-image-container{
@@ -27,41 +22,69 @@
     border: 4px solid brown;
     border-radius: 4px;
     padding: 1.6em;
-    margin-bottom: -1em;
-    margin-top: -1em;
 }
 
 .image-card-image{
-    max-height:70vh;
-    max-width: 70vh;
+    width:100%;
+}
+
+.image-captions{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: bisque;
+    height:fit-content;
+    max-width: 80vw;
+    border: 1px solid brown;
+    border-radius: 4px;
+    padding: 1.6em;
+}
+
+.image-name{
+    color: orangered;
+    font-size: 1.3em;
+}
+
+.image-name span{
+    color: antiquewhite;
+    font-size: 1.4em;
+}
+
+
+.category-icon{
+    width:2em;
+}
+
+.base{
+  font-size: 1.4em;
+  color: darkblue;
+
+}
+
+.base span{
+    font-size: 1.2em;
+    color: brown;
+}
+
+.paint{
+  font-size: 1.4em;
+  color: darkblue;
+
+}
+
+.paint span{
+    font-size: 1.2em;
+    color:  brown;
+
 }
 
 
 
 
-.image-captions p{
-    padding: 0;
-    margin: 0;
-    font-size: 1.6em;
-    line-height: 1.2em;
-    letter-spacing: 0.06em;
-    color: blanchedalmond;
-}
 
-.image-card span{
-    color:orangered;
-    font-style: italic;
-    font-style: italic;
-    font-size: 0.6em;
-    letter-spacing: 0.06em;
-    
-    
-}
 
-.image-card h2{
-   font-style: italic;
-   
-}
+
+
 
 
 

@@ -19,13 +19,13 @@ export async function gallery(ctx) {
 
 
     const imgCard = (p) => html`
-        <div class=" column image-card">
-            <img class="category-icon" src=${"../assets/" + p.paintType + "-icon.png"}/>
-            <h2 class="image-name"><span>name: </span>${p.imageName}<span></span></h2>
-            <div class=" column image-card-image-container">
+        <div class="image-card">
+            <p class="image-name">Paint Name: <span class="image-name-span>">${p.imageName}</span></p>
+            <div class="image-card-image-container">
                 <img class="image-card-image" src="${p.imgFile.url}">
             </div>
             <div class="image-captions">
+                <img class="category-icon" src=${"../assets/" + p.paintType + "-icon.png"}/>
                 <p class="base"><span>base material:</span> ${p.sheetMaterial}</p>
                 <p class="paint"> <span>paint type:</span> ${p.paintType}</p>
             </div>
@@ -37,7 +37,7 @@ export async function gallery(ctx) {
     const imageCardTemplates = pictures.map((p) => imgCard(p));
 
     const template = (imageCardTemplates) => html`
-    <div class="column">
+    <div>
         <label>Select by paint type:
         <select id = "select" @click=${(e)=>handleOption(e)}>
             <option value="">All</option>
