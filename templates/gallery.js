@@ -37,8 +37,8 @@ export async function gallery(ctx) {
     const imageCardTemplates = pictures.map((p) => imgCard(p));
 
     const template = (imageCardTemplates) => html`
-    <div>
-        <label>Select by paint type:
+    <div class="gallery-container">
+        <label class=select label>Select by paint type:</label>
         <select id = "select" @click=${(e)=>handleOption(e)}>
             <option value="">All</option>
             <option value="oil">Oil</option>
@@ -47,8 +47,8 @@ export async function gallery(ctx) {
             <option value="pastels">Pastels</option>
             <option value="charcoal">Charcoal</option>
             <option value="ink">Ink</option>
-        </select>
-        </label>
+</select>
+        
 
         ${imageCardTemplates}
 

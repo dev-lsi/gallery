@@ -78,6 +78,19 @@
 
 }
 
+.gallery-container{
+    display:flex;
+    flex-direction: column;
+    row-gap: 3em;
+    align-items: center;
+}
+
+.select-label{
+    
+    font-size:0.2em;
+    
+}
+
 
 
 
