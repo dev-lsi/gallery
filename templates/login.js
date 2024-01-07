@@ -5,32 +5,30 @@ import { html } from "../lib/lit-html/lit-html.js";
 export function login(ctx) {
 
     const template = () => html`
-     <section class =form-text-section>
-         <h4>On login you will be able to:</h4>
-         <ul class="login-register-ul">
+     
+         <h4 class='h4'>On login you will be able to:</h4>
+         <ul class="text-ul">
              <li>Comment my paintings</li>
              <li>Read the others coments</li>
              <li>Rate on the articles</li>
              <li>Take emails on new stuff</li>
          </ul>
-     </section>
-     <section class=form-text-section>
-         <form class="column" @submit=${(e) => loginUser(e,ctx)} id="login-form" action="submit">
+    
+    
+         <form class @submit=${(e) => loginUser(e,ctx)} id="login-form" action="submit">
         
-             <h6>please add email and password</h6>
+             <h4>Please add email and password</h4>
     
-             <div class="row"><label for="email">email:</label><input id="email" name="email" type="email"      placeholder="email..."></div>
-             <div class="row"><label for="password">password:</label><input id="password" name="password"      type="password" placeholder="password..."></div>
+             <label for="email">Email</label><input id="email" name="email" type="email"      placeholder="email...">
+             <label for="password">Password</label><input id="password" name="password"      type="password" placeholder="password...">
     
-             <input class="submit-btn" type="submit" value="login">
+             <input class="submit-btn" type="submit" value="Login">
 
-             <p>forgotten password?</p>
-
-             <a href="/index.html">Click here!</a>
-             <a href="/register"> Not Registered? Click here!</a>
+             <a class="submit-btn" href="/index.html">Forgotten password?</a>
+             <a class="submit-btn" href="/register"> Not Registered? Click here!</a>
 
          </form>
-     </section>`;
+     `;
 
     ctx.renderTemplate(template(), ctx.container);
     

@@ -1,88 +1,72 @@
 
-
-.form-text-section{
-    background-color: rgba(0, 0, 0, 0.2);
-    
+.text-ul {
+    display:flex;
+    flex-direction: column;
+    align-items:baseline;
+    width:320px;
+    border: 1px solid antiquewhite;
+    border-radius: 1em;
+    background-color: rgb(44, 44, 121);
+    padding-left: 2em;
 }
 
-.form-text-section h4{
-    
-    color:rgb(22, 44, 3);
+.text-ul li {
+    width:320px;
+   
+    list-style:inside circle;
+    color:antiquewhite;
+    padding: 0.3em;
 }
 
-.login-register-ul{
-    max-width: fit-content;
-    padding-bottom: 3vw;
-    margin:0 auto;
-    list-style: circle;
-    color:rgb(22, 44, 3);
-    font-size: larger;
-    text-align: justify;
+.text-ul li p{
+    
 }
 
 form{
-   margin-top:600px;
-   margin:auto auto;
-   padding: 10px;
-   width:360px;
-   display:flex;
-   border: 3px solid rgba(2, 2, 246, 0.1);
-   border-radius: 10%;
-}
-
-
-
-.submit-btn{
     color:antiquewhite;
-    background-color: dimgray;
-    font-size: 1.3rem;
-    width: 70px;
-    height:30px;
-    border-radius: 3px;
-    transition: none;
-}
-
-.submit-btn:hover{
-    background-color:antiquewhite;
-    color: rgb(241, 9, 9);
-}
-
-.submit-btn:active{
-    background-color:antiquewhite;
-    color: dimgray;
-    width: 66px;
-}
-
-form p{
-    color:blue;
-    font-size: 1.2em;
-}
-
-form input, form label{
-    padding-left: 3px;
-    font-size: 18px;
-    display: block;
+    padding: 2em;
+    min-width:340px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: 1px solid antiquewhite;
+    border-radius: 1em;
+    background-color: rgb(44, 44, 121);
     
 }
 
-input[type="submit"]{
-    font-size: 14px;
-}
-
-input::placeholder{
-    font-size: 12px;
-    color:rgba(81, 53, 192, 0.8);
-    padding-left: 3px;
-}
-
-form h5{
-    text-wrap: nowrap;
+form input,form label,form h5{
+    max-width:320px;
+    padding: 0.2em;
+    font-size: 1.4em;
 }
 
 
+.submit-btn{
+    margin-block: 1em;
+    margin-top: 3em;
+    color:antiquewhite;
+    background-color: rgb(74, 74, 126);
+    font-size: 1.2em;
+    padding-block: 0.2em;
+    width:10em;
+    border: 1px solid antiquewhite;
+    border-radius: 0.6em;
+    box-shadow: -0.6em 0.5em rgb(42, 42, 66, 0.2);
+    text-align: center;
+    transition: transform 2s ease;
+    transition: color 1s ease;
+}
 
+.submit-btn:hover{
+    color:rgb(255, 255, 255);
+    background-color: rgb(101, 101, 168);
+}
 
-
-
-
-
+.submit-btn:active{
+    color:antiquewhite;
+    border: 1px solid antiquewhite;
+    box-shadow: -0.4em 0.3em rgba(42, 42, 66, 0.1);
+    background-color: rgb(130, 130, 211);
+}

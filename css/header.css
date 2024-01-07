@@ -1,4 +1,5 @@
 header {
+    
     position: fixed;
     z-index: 999;
     top: 1px;
@@ -48,11 +49,13 @@ header {
     width: 100vw;
     flex-direction: row;
     justify-content: space-between;
+    column-gap: 1em;
     align-items: center;
     border: 1px solid rgb(26, 53, 102);
     background-color: rgb(2, 31, 84);
     padding-inline: 3em;
     padding-block: 1em;
+
 }
 
 .logo-container {
@@ -69,18 +72,31 @@ header {
     
 }
 
-.menu-button {
-    color: rgb(39, 3, 124);
-    padding-block: 0.2em;
-    padding-inline: 1em;
-    border-radius: 0.6em;
+.menu-button{
+    margin-block: 1em;
+    color:antiquewhite;
+    background-color: rgb(74, 74, 126);
     font-size: 1.2em;
+    padding-block: 0.2em;
+    width:10em;
+    border: 1px solid antiquewhite;
+    border-radius: 0.6em;
+    box-shadow: -0.6em 0.5em rgb(42, 42, 66, 0.2);
+    text-align: center;
+    transition: transform 2s ease;
+    transition: color 1s ease;
 }
 
-.menu-button:hover {
-    color: rgb(225, 222, 231);
-    background-color: blue;
-    
+.menu-button:hover{
+    color:rgb(255, 255, 255);
+    background-color: rgb(101, 101, 168);
+}
+
+.menu-button:active{
+    color:antiquewhite;
+    border: 1px solid antiquewhite;
+    box-shadow: -0.4em 0.3em rgba(42, 42, 66, 0.1);
+    background-color: rgb(130, 130, 211);
 }
 
 .task-bar a{
