@@ -16,6 +16,7 @@ import { logout } from "./templates/logout.js";
 document.addEventListener('DOMContentLoaded', start);
 
 
+
 //page(decorateCTX);
 function start() {
   loadHeader();
@@ -23,7 +24,15 @@ function start() {
   
 
   const ctx = {
-    renderTemplate:(template) => render(template,main)
+    renderTemplate:(template) => render(template,main),
+    scrollToTop:()=>scrollToTop()
+  }
+
+  function scrollToTop(){
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }
 
   function getClientSavedData() {

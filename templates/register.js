@@ -28,7 +28,8 @@ export async function register(ctx) {
 
             </form>
     `;
-
+    
+    ctx.scrollToTop();
     ctx.renderTemplate(template(), ctx.container);
     //autoScroll();
 

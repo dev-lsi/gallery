@@ -1,5 +1,4 @@
 
-
 export function loadHeader() {
     let isMenuShowed = true;
 
@@ -8,7 +7,7 @@ export function loadHeader() {
     const nav = document.querySelector('.main-nav');
     const ul = document.querySelector('.main-nav ul');
     
-    nav.addEventListener('click', hideMenu);
+    
 
 
     const lis = Array.from(document.querySelectorAll('.main-nav ul li'));
@@ -19,21 +18,21 @@ export function loadHeader() {
     const aHeight = as[0].clientHeight;
 
     document.documentElement.style.setProperty('--a-height', aHeight);
-    menuButton.addEventListener('click', handleMenu);
-
-    showMenu();
-    hideMenu();
+    //menuButton.addEventListener('click', handleMenu);
+    document.addEventListener('click', handleMenu);
 
     
+    
+   
+    hideMenu();
 
     function handleMenu(e) {
-
-        if (isMenuShowed) {
+        
+        if (isMenuShowed==true) {
             hideMenu(e);
-        } else {
+        }else if(e.target.id == 'menu-button') {
             showMenu(e);
         }
-
     };
 
     function hideMenu() {
@@ -48,8 +47,6 @@ export function loadHeader() {
 
         lis.forEach(li => shrink(li));
         as.forEach(a => shrink(a));
-
-        
 
         isMenuShowed = false;
     };
@@ -66,12 +63,10 @@ export function loadHeader() {
         lis.forEach(li => expand(li,liHeight));
         as.forEach(a => expand(a,aHeight));
 
-
         isMenuShowed = true;
     };
 
     function shrink(el) {
-            
         el.style.height = '0px';
         el.style.transform = 'rotateX(-90deg)';
     }
@@ -79,7 +74,6 @@ export function loadHeader() {
     function expand(el,targetHeight){
         el.style.height = targetHeight + 'px';
         el.style.transform = 'rotateX(0deg)';
-        
     }
 
 

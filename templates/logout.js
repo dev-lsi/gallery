@@ -17,7 +17,7 @@ export function logout(ctx){
 
   showNotification(message,4000);
   
-  
+  ctx.scrollToTop();
   page.show('/index.html');
   
 }

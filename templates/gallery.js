@@ -55,6 +55,8 @@ export async function gallery(ctx) {
     </div>
     `;
     
+
+    ctx.scrollToTop();
     ctx.renderTemplate(template(imageCardTemplates));
     
     function handleOption(e){
