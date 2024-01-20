@@ -4,14 +4,7 @@ import { html } from "../lib/lit-html/lit-html.js";
 export async function gallery(ctx) {
 
     
-    let option='';
-    const select = document.querySelector('#select');
-
-   if(select){
-    option = select.value;
-   }
-    
-    const data = await loadPictures(option);
+    const data = await loadPictures('');
 
     const pictures = data.results;
 
@@ -26,13 +19,17 @@ export async function gallery(ctx) {
             </div>
             <div class="image-captions">
                 <img class="category-icon" src=${"../assets/" + p.paintType + "-icon.png"}/>
-                <p class="base"><span>base material:</span> ${p.sheetMaterial}</p>
-                <p class="paint"> <span>paint type:</span> ${p.paintType}</p>
+                <p class="base"><span>base:</span> ${p.sheetMaterial}</p>
+                <p class="paint"> <span>paint:</span> ${p.paintType}</p>
+                <button @click=${()=>showFullScreen(p.imgFile.url)}>Show fullscreen</button>
             </div>
         </div>
     `;
 
-
+   function showFullScreen(imgUrl,){
+      const imageTemplate=html`<img class="fulscreenImg" src=${imgUrl}>`
+      ctx.renderTemplate(template(imageTemplate));
+   }
 
     const imageCardTemplates = pictures.map((p) => imgCard(p));
 
@@ -44,11 +41,10 @@ export async function gallery(ctx) {
             <option value="oil">Oil</option>
             <option value="watercolor">Watercolor</option>
             <option value="acrylic">Acrylic</option>
-            <option value="pastels">Pastels</option>
+            <option value="pastel">Pastels</option>
             <option value="charcoal">Charcoal</option>
             <option value="ink">Ink</option>
-</select>
-        
+        </select>
 
         ${imageCardTemplates}
 
@@ -59,18 +55,27 @@ export async function gallery(ctx) {
     ctx.scrollToTop();
     ctx.renderTemplate(template(imageCardTemplates));
     
-    function handleOption(e){
-
-        console.log(e.target.value)
-
-        if(e.target.value== "OPTION"){
-
+    async function handleOption(e){
+            
             const option = e.target.value;
-            console.log(option)
-            const queryString=`${"?paintType=" + option}`;
-            gallery(ctx)
+            const queryString=`?where={"paintType":"${option}"}`;
+            let data;
+            if(option==''){
+                data = await loadPictures('');
+            }else{
+                data = await loadPictures(queryString);
+            }
+            
+            const pictures = data.results;
+            const imgSrc = pictures.map((r) => r.imgFile.url);
+           
+            const imageCardTemplates = pictures.map((p) => imgCard(p));
 
-        }
+            ctx.scrollToTop();
+            ctx.renderTemplate(template(imageCardTemplates));
+    
+
+        
        
     }
 }

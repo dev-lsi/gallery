@@ -4,10 +4,8 @@
     flex-direction: column;
     align-items: center;
     row-gap: 0.8em;
-
     height:fit-content;
     width:80vw;
-
     padding: 3em;
 
     border:1px solid rgba(188, 186, 186, 0.5);
@@ -31,23 +29,22 @@
 .image-captions{
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    row-gap: 0.2em;
+    width:100%;
     background-color: bisque;
-    height:fit-content;
-    max-width: 80vw;
     border: 1px solid brown;
     border-radius: 4px;
-    padding: 1.6em;
+    padding: 1em;
 }
 
 .image-name{
     color: orangered;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .image-name span{
     color: antiquewhite;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 
@@ -55,27 +52,28 @@
     width:2em;
 }
 
-.base{
-  font-size: 1.4em;
-  color: darkblue;
-
-}
-
 .base span{
     font-size: 1.2em;
     color: brown;
+    line-height: 1em;
 }
 
-.paint{
-  font-size: 1.4em;
+.base{
+  font-size: 1.2em;
   color: darkblue;
-
+  line-height: 1em;
 }
 
 .paint span{
     font-size: 1.2em;
     color:  brown;
+    line-height: 1em;
+}
 
+.paint{
+  font-size: 1.2em;
+  color: darkblue;
+  line-height: 1em;
 }
 
 .gallery-container{
@@ -87,7 +85,13 @@
 
 .select-label{
     
-    font-size:0.2em;
+    font-size:1em;
+    
+}
+
+.fulscreenImg{
+    width:90%;
+    z-index: 999;
     
 }
 

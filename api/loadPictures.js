@@ -13,3 +13,5 @@ export async function loadPictures(options){
         
         return data;
 }
+
+//https://parseapi.back4app.com/classes/Paint?where={"paintType":"oil"}';
